@@ -1,0 +1,24 @@
+.burger
+  width: 1em
+  height: 1em
+  padding: 0.2em
+  cursor: pointer
+  margin: 0 auto
+  outline: none !important
+
+  div
+    background-color: $primary-color
+    width: 1em
+    height: 0.2em
+    margin-bottom: 3px
+    transition: all 0.2s ease-out
+
+  &.open
+    .one
+      transform: translateY(0.4em) rotate(45deg)
+
+    .two
+      opacity: 0
+
+    .three
+      transform: translateY(-0.4em) rotate(-45deg)
